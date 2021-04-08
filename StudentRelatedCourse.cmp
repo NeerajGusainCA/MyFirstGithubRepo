@@ -1,0 +1,27 @@
+<aura:component
+  controller="StudentRelatedCourseController"
+  implements="flexipage:availableForAllPageTypes,force:hasRecordId"
+  access="global"
+>
+  <aura:attribute name="recordId" type="String"></aura:attribute>
+  <aura:attribute name="studentList" type="Student__c[]"></aura:attribute>
+  <aura:handler name="init" value="{!this}" action="{!c.doInit}"></aura:handler>
+  <div class="Container">
+    <div class="containerBox">
+      <lightning:icon
+      iconName="standard:opportunity"
+      size="large"
+      alternativeText="List opportunity"
+    />
+      <h1 class="heading">Enolled Student </h1>
+    </div>
+   <div class="scroll">
+    <aura:iteration items="{!v.studentList}" var="item">
+      <div class="slds-media__figure Name">
+        <h1 class="contName">{!item.Name}</h1>
+      </div>
+    </aura:iteration>
+   </div>
+  
+  </div>
+</aura:component>

@@ -1,0 +1,27 @@
+.THIS.Container{
+    padding:10px;
+    
+    
+}
+.THIS .containerBox{
+    display:flex;
+    padding:10px;
+    align-items: center;
+   
+}
+.THIS .scroll{
+    height:200px;
+    overflow:auto;
+}
+.THIS .heading{
+    margin:5px;
+    font-weight: bold;
+    
+}
+.THIS .contName{
+    color: rgb(56,109,204);
+}
+.THIS .Name{
+    padding:10px;
+    border:1px solid lightgray;
+}
