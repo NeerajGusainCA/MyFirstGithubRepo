@@ -6,6 +6,7 @@
   <aura:attribute name="recordId" type="String"></aura:attribute>
   <aura:attribute name="studentList" type="Student__c[]"></aura:attribute>
   <aura:handler name="init" value="{!this}" action="{!c.doInit}"></aura:handler>
+  <h1>Hii GIT</h1>
   <div class="Container">
     <div class="containerBox">
       <lightning:icon
